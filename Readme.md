@@ -17,7 +17,7 @@ $ npm install --save-dev @improntaadvance/eslint-config
 Then install all the `peer-dependencies` of the module:
 
 ```sh
-$ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react prettier
+$ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react
 // OR
 $ npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react
 ```
@@ -30,7 +30,7 @@ There's an handy tool to simplify the steps above in a single command, named `in
 $ yarn global add install-peerdeps
 // or npm install -g install-peerdeps 
 ...
-$ install-peerdeps -d eslint-config-improntaadv
+$ install-peerdeps -d @improntaadvance/eslint-config
 ```
 
 ## Usage
@@ -49,11 +49,11 @@ You can append the `"@improntaadvance"` value if you're having other configs alr
 ### Using Flow
 
 While it is not mandatory it can be useful to install `flow` too.
-Please refer to the `flow` (ufficial documentation)[https://flow.org/en/docs/install/] for the installation steps.
+Please refer to the `flow` [ufficial documentation](https://flow.org/en/docs/install/) for the installation steps.
 
 ## Using Prettier
 
-Because the (`prettier`)[https://github.com/prettier/prettier] is already integrated in this configuration you can just execute `eslint --fix` as usual to apply prettier style to your code:
+Because the [`prettier`](https://github.com/prettier/prettier) configuration is already integrated in this configuration you can just execute `eslint --fix` as usual to apply prettier style to your code:
 
 ```sh
 $ ./node_modules/.bin/eslint --fix
