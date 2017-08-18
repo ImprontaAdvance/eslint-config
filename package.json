@@ -1,12 +1,20 @@
 {
   "name": "@improntaadvance/eslint-config",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A basic ESlint configuration for React projects with Prettier and FlowType",
   "main": "index.js",
-  "keywords": ["eslint", "prettier", "flowtype", "flow-bin", "react"],
+  "keywords": [
+    "eslint",
+    "prettier",
+    "flowtype",
+    "flow-bin",
+    "react"
+  ],
   "author": "Marco Liberati <marco.l@improntaadv.com>",
   "license": "ISC",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "repository": "ImprontaAdvance/eslint-config",
   "peerDependencies": {
     "eslint": ">=4.3.0",
