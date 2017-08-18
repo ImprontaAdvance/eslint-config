@@ -79,7 +79,7 @@ TODO
 ## Badge
 
 ```
-[![js-impronta-style](https://img.shields.io/badge/code%20style-@improntaadvance-green.svg?style=flat-square)](http://improntaadv.com/)
+[![js-impronta-style](https://img.shields.io/badge/code--style-@improntaadvance-green.svg?style=flat-square)](http://improntaadv.com/)
 ```
 
-[![js-impronta-style](https://img.shields.io/badge/code%20style-@improntaadvance-green.svg?style=flat-square)](http://improntaadv.com/)
+[![js-impronta-style](https://img.shields.io/badge/code--style-@improntaadvance-green.svg?style=flat-square)](http://improntaadv.com/)
