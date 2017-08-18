@@ -2,9 +2,20 @@
 
 An ESLint Shareable Config from ImprontaAdvance.
 
-## Install
-
 This module is for advanced users.
+
+### Autopilot Install
+
+There's an handy tool to simplify the install process in a single command, named `install-peerdeps`:
+
+```sh
+$ yarn global add install-peerdeps
+// or npm install -g install-peerdeps 
+...
+$ install-peerdeps -d @improntaadvance/eslint-config
+```
+
+## Manual Install
 
 First, install the module in your `package.json` using `npm` or `yarn`:
 
@@ -20,17 +31,6 @@ Then install all the `peer-dependencies` of the module:
 $ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react
 // OR
 $ npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react
-```
-
-### install-peerdeps CLI
-
-There's an handy tool to simplify the steps above in a single command, named `install-peerdeps`:
-
-```sh
-$ yarn global add install-peerdeps
-// or npm install -g install-peerdeps 
-...
-$ install-peerdeps -d @improntaadvance/eslint-config
 ```
 
 ## Usage
