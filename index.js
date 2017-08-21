@@ -20,6 +20,9 @@ module.exports = {
                 tabWidth: 4,
             },
         ],
+        'block-scoped-var': 'warn',
+        camelcase: 'warn',
+        curly: ['error', 'all'],
     },
     parserOptions: {
         ecmaVersion: 2017,
