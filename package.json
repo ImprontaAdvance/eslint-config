@@ -17,6 +17,7 @@
   ],
   "repository": "ImprontaAdvance/eslint-config",
   "peerDependencies": {
+    "babel-eslint": "^7.2.3",
     "eslint": ">=4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-flowtype": "^2.35.0",

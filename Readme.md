@@ -28,9 +28,9 @@ $ npm install --save-dev @improntaadvance/eslint-config
 Then install all the `peer-dependencies` of the module:
 
 ```sh
-$ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react
+$ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react babel-eslint
 // OR
-$ npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react
+$ npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-flowtype eslint-plugin-prettier eslint-plugin-react babel-eslint
 ```
 
 ## Usage
