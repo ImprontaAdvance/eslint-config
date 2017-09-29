@@ -13,7 +13,7 @@ module.exports = {
             'error',
             {
                 singleQuote: true,
-                trailingComma: 'all',
+                trailingComma: 'es5',
                 bracketSpacing: false,
                 jsxBracketSameLine: true,
                 parser: 'flow',
