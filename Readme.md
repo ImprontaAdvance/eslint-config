@@ -74,7 +74,24 @@ Therefore in your `package.json` file just add in the `scripts` section:
 
 ## IDE Integration
 
-TODO
+Integrating this with your editor will check your code during development together with automatically fix many issues on save. Most issues may arise from the `prettier` rules inside this package, that `eslint --fix` can easily solve for you.
+
+### VSCode
+
+Install a `eslint` extension and enable the `eslint --fix` on save in the IDE preferences:
+
+```
+...
+
+"eslint.autoFixOnSave": true,
+...
+```
+
+### Atom
+
+Install a `eslint` plugin and enable from the extension configuration the label :
+
+![Fix errors on save setting]( doc/atom-plugin.png )
 
 ## Badge
 
