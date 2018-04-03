@@ -10,7 +10,7 @@ There's an handy tool to simplify the install process in a single command, named
 
 ```sh
 $ yarn global add install-peerdeps
-// or npm install -g install-peerdeps 
+// or npm install -g install-peerdeps
 ...
 $ install-peerdeps -d @improntaadvance/eslint-config
 ```
@@ -39,8 +39,7 @@ In your ESlint configuration file (either `.eslintrc`, `.eslintrc.js` or the `es
 
 ```json
 {
-  "extends": ["@improntaadvance"],
-  ...
+  "extends": ["@improntaadvance"]
 }
 ```
 
@@ -92,6 +91,76 @@ Install a `eslint` extension and enable the `eslint --fix` on save in the IDE pr
 Install a `eslint` plugin and enable from the extension configuration the label :
 
 ![Fix errors on save setting]( doc/atom-plugin.png )
+
+## Override the prettier configuration
+
+Sometimes it is required to tweak a little bit the configuration, expecially when working with different teams one may like 2 ore 4 spaces indentation.
+This request is reasonable and it is possible to tweak the configuration directly in the `eslint` configuration file:
+
+```json
+{
+  "extends": [
+    "@improntaadvance"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": false,
+        "jsxBracketSameLine": true,
+        "parser": "flow",
+        "tabWidth": 2
+      }
+    ]
+  }
+}
+```
+
+Note that the whole configuration object needs to be passed.
+
+### Integration with Third party tools
+
+As an alternative for overriding it is possible to keep distinct the `prettier` configuration to better integrate with third party tools and use a `.prettierrc` file.
+
+* Create a `.prettierrc` file and paste the following content inside:
+
+```js
+{
+  singleQuote: true,
+  trailingComma: 'es5',
+  bracketSpacing: false,
+  jsxBracketSameLine: true,
+  parser: 'flow',
+  tabWidth: 4,
+}
+```
+
+* Now edit your `.eslintrc` file and add the following rule:
+
+```json
+{
+  "extends": [
+    "@improntaadvance"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      null
+    ]
+  }
+}
+```
+
+Now everything should be in sync: edit the `.prettierrc` file with your own custom rules.
+
+## Common issues
+
+### The IDE prettier plugin does not read this configuration
+
+This module works using only the `eslint` plugin for IDEs. Additional prettier plugins may go in conflict with this configuration as they usually rely only on the `.prettierrc` configuration file.
+It is possible to make them both work overriding the current configuration as explained in the [third party tools section][#integration-with-third-party-tools].
 
 ## Badge
 
