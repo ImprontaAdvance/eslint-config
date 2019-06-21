@@ -14,5 +14,6 @@ module.exports = {
     'block-scoped-var': 'warn',
     camelcase: 'warn',
     curly: ['error', 'all'],
+    'react/prop-types': 'warn',
   },
 };
