@@ -9,10 +9,7 @@ This module is for advanced users.
 There's an handy tool to simplify the install process in a single command, named `install-peerdeps`:
 
 ```sh
-$ yarn global add install-peerdeps
-// or npm install -g install-peerdeps
-...
-$ install-peerdeps -d @improntaadvance/eslint-config
+$ npx install-peerdeps -d @improntaadvance/eslint-config
 ```
 
 ## Manual Install
@@ -28,9 +25,9 @@ $ npm install --save-dev @improntaadvance/eslint-config
 Then install all the `peer-dependencies` of the module:
 
 ```sh
-$ yarn add --dev babel-eslint@9.x eslint@5.x eslint-config-prettier@4.x eslint-config-react-app@4.x eslint-plugin-flowtype@2.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-prettier@3.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.x prettier@1.x
+$ yarn add --dev babel-eslint@^10.0.0 eslint@5.x eslint-config-prettier@5.x eslint-config-react-app@4.x eslint-plugin-flowtype@3.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-prettier@3.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.x prettier@1.x
 // OR
-$ npm install --save-dev babel-eslint@9.x eslint@5.x eslint-config-prettier@4.x eslint-config-react-app@4.x eslint-plugin-flowtype@2.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-prettier@3.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.x prettier@1.x
+$ npm install --save-dev babel-eslint@^10.0.0 eslint@5.x eslint-config-prettier@5.x eslint-config-react-app@4.x eslint-plugin-flowtype@3.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-prettier@3.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.x prettier@1.x
 ```
 
 ## Usage
