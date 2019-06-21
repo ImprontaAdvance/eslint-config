@@ -1,5 +1,2 @@
 # Vendors
 node_modules/
-
-# npm lock
-package-lock.json
