@@ -1,6 +1,6 @@
 {
   "name": "@improntaadvance/eslint-config",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A basic ESlint configuration for React projects with Prettier and FlowType",
   "main": "index.js",
   "keywords": [
