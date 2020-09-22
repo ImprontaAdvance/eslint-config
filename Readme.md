@@ -1,33 +1,30 @@
 # @improntaadvance/eslint-config
 
-An ESLint Shareable Config from ImprontaAdvance.
+An ESLint Shareable Config from ImprontaAdvance based on config-react-app.
 
 This module is for advanced users.
 
-### Autopilot Install
-
-There's an handy tool to simplify the install process in a single command, named `install-peerdeps`:
+### Installation for projects based on [create-react-app](https://create-react-app.dev/)
 
 ```sh
-$ npx install-peerdeps -d @improntaadvance/eslint-config
-```
-
-## Manual Install
-
-First, install the module in your `package.json` using `npm` or `yarn`:
-
-```sh
-$ yarn add --dev @improntaadvance/eslint-config
-// OR
 $ npm install --save-dev @improntaadvance/eslint-config
+# OR
+$ yarn add --dev @improntaadvance/eslint-config
 ```
 
-Then install all the `peer-dependencies` of the module:
+
+### Installation for projects not based on [create-react-app](https://create-react-app.dev/)
 
 ```sh
-$ yarn add --dev babel-eslint@^10.0.0 eslint@5.x eslint-config-prettier@5.x eslint-config-react-app@4.x eslint-plugin-flowtype@3.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-prettier@3.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.x prettier@1.x
-// OR
-$ npm install --save-dev babel-eslint@^10.0.0 eslint@5.x eslint-config-prettier@5.x eslint-config-react-app@4.x eslint-plugin-flowtype@3.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-prettier@3.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.x prettier@1.x
+$ npm install --save-dev @improntaadvance/eslint-config
+# OR
+$ yarn add --dev @improntaadvance/eslint-config
+```
+
+Then, install peerDependencies:
+
+```sh
+$ npx install-peerdeps -d eslint-config-react-app
 ```
 
 ## Usage
@@ -42,10 +39,6 @@ In your ESlint configuration file (either `.eslintrc`, `.eslintrc.js` or the `es
 
 You can append the `"@improntaadvance"` value if you're having other configs already.
 
-### Using Flow
-
-While it is not mandatory it can be useful to install `flow` too.
-Please refer to the `flow` [ufficial documentation](https://flow.org/en/docs/install/) for the installation steps.
 
 ## Using Prettier
 
