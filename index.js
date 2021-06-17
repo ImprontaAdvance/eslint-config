@@ -20,7 +20,6 @@ const config = {
 
 if (moduleExists('eslint-config-prettier')) {
   config.extends.push('prettier');
-  config.extends.push('prettier/react');
   config.plugins.push('prettier');
   config.rules['prettier/prettier'] = [
     'error',

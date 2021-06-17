@@ -15,11 +15,11 @@
   ],
   "repository": "ImprontaAdvance/eslint-config",
   "dependencies": {
-    "eslint-config-prettier": ">=6.0.0",
-    "eslint-plugin-prettier": ">=3.1.4",
-    "prettier": ">=2.1.2"
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.0"
   },
   "peerDependencies": {
-    "eslint-config-react-app": ">=5.2.1"
+    "eslint-config-react-app": "^6.0.0"
   }
 }
