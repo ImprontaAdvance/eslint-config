@@ -24,7 +24,7 @@ $ yarn add --dev @improntaadvance/eslint-config
 Then, install peerDependencies:
 
 ```sh
-$ npx install-peerdeps -d eslint-config-react-app@7
+$ npm install -D eslint-config-react-app@7.0.1 eslint@^8.0.0
 ```
 
 ## Usage
